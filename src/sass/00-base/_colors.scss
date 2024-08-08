@@ -1,0 +1,19 @@
+:root {
+  --color--primary: hsl(61, 70%, 52%);
+  --color--primary-light: hsl(61, 70%, 72%);
+  --color--primary-transparent: hsla(61, 70%, 52%, 0.3);
+
+  --color--secondary: hsl(4, 69%, 50%);
+
+  --color--neutral-white: hsl(0, 0%, 100%);
+  --color--neutral-slate-100: hsl(202, 86%, 94%);
+  --color--neutral-slate-300: hsl(203, 41%, 72%);
+  --color--neutral-slate-500: hsl(200, 26%, 54%);
+  --color--neutral-slate-700: hsl(200, 24%, 40%);
+  --color--neutral-slate-900: hsl(202, 55%, 16%);
+}
+
+body {
+  background-color: var(--color--neutral-slate-100);
+}
+

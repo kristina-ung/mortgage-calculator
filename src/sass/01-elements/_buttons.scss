@@ -1,0 +1,33 @@
+@mixin button {
+  background-color: var(--color--primary);
+  color: var(--color--neutral-slate-900);
+  cursor: pointer;
+  border-radius: 4rem;
+  border: none;
+  padding: 1rem 2.5rem;
+  text-align: left;
+  font-weight: var(--font-weight--bold);
+
+  &:hover,
+  &:active {
+    background-color: var(--color--primary-light);
+  }
+}
+
+.button {
+  @include button;
+
+  & {
+    font-size: var(--font-size-600);
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      svg {
+        min-width: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* Import Fonts */
+
+@font-face {
+  font-family: 'Jakarta Sans';
+  src: local('Jakarta Sans'),
+    url(./../../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format('woff');
+}
+
+:root {
+  --font-family--primary: 'Jakarta Sans';
+
+  --font-weight--normal: 500;
+  --font-weight--bold: 700;
+
+  --font-size-100: 3.125rem; // 50px
+  --font-size-200: 2.625rem; // 42px
+  --font-size-300: 2.25rem;  // 36px
+  --font-size-400: 1.875rem; // 30px
+  --font-size-500: 1.5rem;   // 24px
+  --font-size-600: 1.125rem; // 18px
+  --font-size-700: 1rem;     // 16px
+  --font-size-800: 0.875rem; // 14px
+
+  --font-size--body: 16px;
+}
+
+body {
+  font-family: var(--font-family--primary);
+  font-weight: var(--font-weight--normal);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight--bold);
+  margin-block-end: 1.25rem;
+  line-height: 1.25;
+}
+
+strong {
+  font-weight: var(--font-weight--bold);
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.8em;
+}
